@@ -1,40 +1,74 @@
-/* Adicione o seu estilo personalizado aqui */
-
+/* Estilos gerais */
 body {
-    font-family: Arial, sans-serif;
-  }
-  
-  header {
-    /* Estilos do cabeçalho */
-  }
-  
-  .carousel {
-    /* Estilos para o carrossel */
-  }
-  
-  .featured-products {
-    padding: 40px 0;
-  }
-  
-  .featured-products .card {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    transition: transform 0.2s;
-  }
-  
-  .featured-products .card:hover {
-    transform: scale(1.05);
-  }
-  
-  .about-us {
-    padding: 40px 0;
-  }
-  
-  .contact-us {
-    padding: 40px 0;
-  }
-  
-  footer {
-    /* Estilos do rodapé */
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("public/images/fundo.jpg");
+  background-size: cover;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #333;
+  padding: 10px 0;
+}
+
+.logo {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Carrossel */
+.carousel {
+  margin: 50px auto;
+  width: 30cm;
+  height: 15cm;
+  overflow: hidden;
+}
+
+.carousel-inner img {
+  height: 100%;
+  width: auto;
+}
+
+/* Sobre Nós */
+.about-us {
+  padding: 40px 0;
+}
+
+.cultivation-photos img {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 15px;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
