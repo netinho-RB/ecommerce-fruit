@@ -3,7 +3,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url("public/images/fundo.jpg");
+  background-image: url("public/images/background/fundo.jpg");
   background-size: cover;
 }
 
@@ -42,16 +42,38 @@ body {
 }
 
 /* Carrossel */
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px; /* Ajuste a altura conforme necessário */
+}
+
 .carousel {
-  margin: 50px auto;
-  width: 30cm;
-  height: 15cm;
+  width: 100%;
+  max-width: 800px;
   overflow: hidden;
 }
 
-.carousel-inner img {
+.carousel-inner {
+  display: flex;
+  width: 600%; /* Ajuste o tamanho total para 600% da largura do carrossel (6 imagens) */
   height: 100%;
-  width: auto;
+  transition: transform 0.5s ease-in-out; /* Adicione uma transição suave para a animação do carrossel */
+}
+
+.carousel-item {
+  flex: 0 0 16.666%; /* Cada item do carrossel ocupará 16.666% da largura do carrossel (100% / 6 imagens) */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9; /* Adicione um fundo claro para o alinhamento vertical das imagens */
+}
+
+.carousel-item img {
+  max-height: 80%; /* Ajuste a altura máxima das imagens conforme necessário */
+  max-width: 100%;
+  object-fit: contain;
 }
 
 /* Sobre Nós */
