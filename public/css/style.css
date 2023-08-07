@@ -1,0 +1,40 @@
+/* Adicione o seu estilo personalizado aqui */
+
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    /* Estilos do cabeçalho */
+  }
+  
+  .carousel {
+    /* Estilos para o carrossel */
+  }
+  
+  .featured-products {
+    padding: 40px 0;
+  }
+  
+  .featured-products .card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: transform 0.2s;
+  }
+  
+  .featured-products .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .about-us {
+    padding: 40px 0;
+  }
+  
+  .contact-us {
+    padding: 40px 0;
+  }
+  
+  footer {
+    /* Estilos do rodapé */
+  }
+  
